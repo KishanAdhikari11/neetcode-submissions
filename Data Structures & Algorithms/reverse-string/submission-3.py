@@ -1,0 +1,14 @@
+class Solution:
+    def reverseString(self, s: List[str]) -> None:
+        """
+        Do not return anything, modify s in-place instead.
+        """
+        lp,rp=0,len(s)-1
+        while lp <rp:
+            temp=s[lp]
+            s[lp]=s[rp]
+            s[rp]=temp
+            lp+=1
+            rp-=1
+
+        
